@@ -1,0 +1,26 @@
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+
+export default function Profile() {
+  return (
+    <div>
+      <Navbar />
+      <div className="max-w-5xl mx-auto p-6">
+        <div className="flex items-center space-x-6">
+          <img src="/avatar.png" className="w-24 h-24 rounded-full" alt="Profile" />
+          <div>
+            <h1 className="text-3xl font-bold">Jane Doe</h1>
+            <p className="text-gray-600">Level 2 Seller • VynixChoice</p>
+            <p className="mt-2">"Expert in Logo Design with 5+ years of experience."</p>
+          </div>
+        </div>
+
+        <h2 className="mt-8 text-2xl font-bold">Gigs</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+          {/* Map user's gigs here */}
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
