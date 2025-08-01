@@ -1,0 +1,26 @@
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+export default function PostJob() {
+  return (
+    <div>
+      <Navbar />
+      <div className="max-w-3xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">Post a Job</h1>
+        <form className="space-y-4 bg-white p-6 shadow-md rounded-md">
+          <input type="text" placeholder="Job Title" className="w-full p-3 border rounded" />
+          <textarea placeholder="Job Description" className="w-full p-3 border rounded"></textarea>
+          <input type="number" placeholder="Budget (USD)" className="w-full p-3 border rounded" />
+          <select className="w-full p-3 border rounded">
+            <option>Select Category</option>
+            <option>Web Development</option>
+            <option>Graphic Design</option>
+            <option>Writing</option>
+          </select>
+          <button className="bg-purple-700 text-white px-6 py-3 rounded">Post Job</button>
+        </form>
+      </div>
+      <Footer />
+    </div>
+  );
+}
